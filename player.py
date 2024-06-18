@@ -9,6 +9,9 @@ class Player:
     def calc_cards(self):
         return sum(card.value for card in self.hand)
 
+    def hit(self, deck):
+        self.hand.append(deck.deal())
+
     def __str__(self):
         return f"{self.name} has {self.hand[0]} and {self.hand[1]} for a total of {self.calc_cards()}"
 

@@ -17,10 +17,9 @@ class Deck:
     def shuffle(self):
         random.shuffle(self.cards)
 
+    def deal(self):
+        return self.cards.pop()
+
 
 deck = Deck()
 deck.shuffle()
-deck.print_deck()
-
-deck.shuffle()
-deck.print_deck()

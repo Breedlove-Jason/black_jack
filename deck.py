@@ -19,7 +19,3 @@ class Deck:
 
     def deal(self):
         return self.cards.pop()
-
-
-deck = Deck()
-deck.shuffle()
